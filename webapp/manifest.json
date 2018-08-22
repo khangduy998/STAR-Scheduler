@@ -93,7 +93,7 @@
 				},
 				{
 					"name": "StudentSchedule",
-					"pattern": "Manager/:Muser:/Intern/:Iuser:",
+					"pattern": "Managers/:Muser:/Intern/:Iuser:",
 					"target": [
 						"StudentSchedule"
 					]
