@@ -51,13 +51,17 @@ sap.ui.define([
 			oPopover.openBy(oEvent.getSource());
 		},
 		OnNavToInOffice: function (){
-			this.getOwnerComponent().getRouter().navTo("ManagerInternTable");
+			var sType="true";
+			this.getOwnerComponent().getRouter().navTo("ManagerInternTable",{type:sType});
 		},
 		OnNavToWorkingRemotely: function (){
 			this.getOwnerComponent().getRouter().navTo("ManagerInternTable");
 		},
 		OnNavToVacation: function (){
 			this.getOwnerComponent().getRouter().navTo("ManagerInternTable");
+		},
+		OnNavToAddStudent: function (){
+			this.getOwnerComponent().getRouter().navTo("AddStudentForm");
 		}
 	});
 

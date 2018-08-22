@@ -100,9 +100,16 @@
 				},
 				{
 					"name": "ManagerInternTable",
-					"pattern": "ManagerInternTable",
+					"pattern": "ManagerInternTable/:type:",
 					"target": [
 						"ManagerInternTable"
+					]
+				},
+				{
+					"name": "AddStudentForm",
+					"pattern": "AddStudentForm",
+					"target": [
+						"AddStudentForm"
 					]
 				}
 				
@@ -130,7 +137,12 @@
 				"ManagerInternTable": {
 					"viewType": "XML",
 					"viewName": "ManagerInternTable"
+				},
+				"AddStudentForm": {
+					"viewType": "XML",
+					"viewName": "AddStudentForm"
 				}
+				
 				
 			}
 		}
