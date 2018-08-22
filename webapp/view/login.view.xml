@@ -1,18 +1,58 @@
-<mvc:View controllerName="STARSchedule.STARSchedule.controller.login" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt"
-	displayBlock="true" xmlns="sap.m">
-	<App id="idAppControl">
-		<pages>
-			<Page title="STAR Schedule">
-				<content>
-					<tnt:ToolHeader>
-						<Button icon="sap-icon://menu2" type="transparent"/>
-						<ToolbarSpacer/>
-						<Text text="Welcome, {mainModel>/0/Username}"/>
-						<ToolbarSpacer/>
-						<Button icon="sap-icon://log" type="transparent"/>
-					</tnt:ToolHeader>
-				</content>
-			</Page>
-		</pages>
-	</App>
+<mvc:View controllerName="STARSchedule.STARSchedule.controller.login"
+		xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:tnt="sap.tnt"
+	height="100%">
+	<Page>
+		<content align="center">
+	   <!--Header functionality -->
+		<tnt:ToolHeader>
+				<ToolbarSpacer />
+				<core:Icon src="sap-icon://activate">
+				</core:Icon>
+				<Text text="Welcome" wrapping="false">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="Disappear" />
+					</layoutData>
+				</Text>
+				<ToolbarSpacer />
+				<Button icon="sap-icon://log" type="Transparent" press="onUserNamePress">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow" />
+					</layoutData>
+				</Button>
+		</tnt:ToolHeader>
+		
+		<!--Tiles functionality -->
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="In Office"
+						press="OnNavToInOffice">
+						<TileContent>
+							<ImageContent src="sap-icon://building" />
+						</TileContent>
+					</GenericTile>
+				
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Working remotely"
+						press="OnNavToWorkingRemotely">
+						<TileContent>
+							<ImageContent src="sap-icon://offsite-work" />
+						</TileContent>
+					</GenericTile>
+				
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="On Vacation"
+						 mode="HeaderMode" press="OnNavToVacation">
+						<TileContent>
+							<ImageContent src="sap-icon://general-leave-request" />
+						</TileContent>
+					</GenericTile>
+				
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Add a student"
+						 press="OnNavToAddStudent">
+						<TileContent>
+							<ImageContent src="sap-icon://add-employee" />
+						</TileContent>
+					</GenericTile>
+					</content>
+	</Page>
 </mvc:View>
+
