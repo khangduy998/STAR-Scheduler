@@ -1,4 +1,4 @@
-<mvc:View controllerName="STARSchedule.STARSchedule.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt"
+<mvc:View controllerName="STARSchedule.STARSchedule.controller.login" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt"
 	displayBlock="true" xmlns="sap.m">
 	<App id="idAppControl">
 		<pages>
@@ -7,7 +7,7 @@
 					<tnt:ToolHeader>
 						<Button icon="sap-icon://menu2" type="transparent"/>
 						<ToolbarSpacer/>
-						<Text text="Welcome, User"/>
+						<Text text="Welcome, {mainModel>/0/Username}"/>
 						<ToolbarSpacer/>
 						<Button icon="sap-icon://log" type="transparent"/>
 					</tnt:ToolHeader>
