@@ -15,7 +15,7 @@
 							<Label text="Login using your credentials.."/>
 								<Input placeholder="user name"/>
 								<Input type="password" placeholder="password"/>	
-								<Button width="12rem" text="Login" type="emphasized"/>
+								<Button width="12rem" text="Login" type="emphasized" press="onLoggedIn"/>
 						</items>
 						
 					</VBox>

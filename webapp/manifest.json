@@ -83,6 +83,13 @@
 					"target": [
 						"TargetView1"
 					]
+				},
+				{
+					"name": "LogInView",
+					"pattern": "LogIn",
+					"target": [
+						"login"
+					]
 				}
 			],
 			"targets": {

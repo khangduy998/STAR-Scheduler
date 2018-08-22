@@ -25,8 +25,12 @@
         					// set up test service for local testing
         					server.init();
         					
-        						// initialize the ushell sandbox component
-        						sap.ushell.Container.createRenderer().placeAt("app");
+        						new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "STARSchedule.STARSchedule"
+					})
+				}).placeAt("content");
         					
                         });
 			});

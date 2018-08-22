@@ -4,6 +4,8 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("STARSchedule.STARSchedule.controller.View1", {
-
+			onLoggedIn: function(){
+				this.getOwnerComponent().getRouter().navTo("LogInView");
+			}
 	});
 });

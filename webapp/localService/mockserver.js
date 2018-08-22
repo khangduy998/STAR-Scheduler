@@ -884,7 +884,7 @@ sap.ui.define([
 ();
 
 	var oMockServer,
-		_sAppModulePath = "com.sap.servicerequest.servicerequest/";
+		_sAppModulePath = "STARSchedule.STARSchedule/";
 	return {
 
 		/**
