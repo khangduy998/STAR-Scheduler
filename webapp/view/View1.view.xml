@@ -1,0 +1,26 @@
+<mvc:View controllerName="STARSchedule.STARSchedule.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:tnt="sap.tnt" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="STAR Schedule">
+				<content>
+					<tnt:ToolHeader>
+						<ToolbarSpacer/>
+						<Text text="Welcome"/>
+						<ToolbarSpacer/>
+					</tnt:ToolHeader>
+					
+					<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+						<items>
+							<Label text="Login using your credentials.."/>
+								<Input placeholder="user name"/>
+								<Input type="password" placeholder="password"/>	
+								<Button width="12rem" text="Login" type="emphasized"/>
+						</items>
+						
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
