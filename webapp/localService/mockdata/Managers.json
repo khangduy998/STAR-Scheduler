@@ -1,11 +1,9 @@
-{
-	"Managers" : 
-	[
+[
 		{
 			"Username" : "I123456",
 			"Password" : "ImJune",
 			"Name" : "June Huynh",
-			"Interns" :	[
+			"Intern" :	[
 			{
 						"Username": "I861309",
 						"Password": "HelloWorld",
@@ -15,7 +13,8 @@
 							{
 								"Start" : "9am",
 								"End" : "10am",
-								"Type" : true
+								"Type" : true,
+								"Check" : false
 							}
 						],
 						"Tuesday" :
@@ -23,12 +22,14 @@
 							{
 								"Start" : "2pm",
 								"End" : "3pm",
-								"Type" : false
+								"Type" : false,
+								"Check" : false
 							},
 							{
 								"Start" : "4pm",
 								"End" : "5pm",
-								"Type" : false
+								"Type" : false,
+								"Check" : false
 							}
 						],
 						"Wednesday" :
@@ -36,7 +37,8 @@
 							{
 								"Start" : "11am",
 								"End" : "2pm",
-								"Type" : true
+								"Type" : true,
+								"Check" : false
 							}
 						],
 						"Thursday" :
@@ -44,7 +46,8 @@
 							{
 								"Start" : "8am",
 								"End" : "9am",
-								"Type" : false
+								"Type" : false,
+								"Check" : false
 							}
 						],
 						"Friday" :
@@ -52,7 +55,8 @@
 							{
 								"Start" : "9am",
 								"End" : "10am",
-								"Type" : false
+								"Type" : false,
+								"Check" : false
 							}
 						],
 						"Vacations" :
@@ -76,7 +80,8 @@
 							{
 								"Start" : "",
 								"End" : "",
-								"Type" : ""
+								"Type" : "",
+								"Check" : false
 							}
 						],
 						"Tuesday" :
@@ -84,7 +89,8 @@
 							{
 								"Start" : "",
 								"End" : "",
-								"Type" : ""
+								"Type" : "",
+								"Check" : false
 							}
 						],
 						"Wednesday" :
@@ -92,7 +98,8 @@
 							{
 								"Start" : "",
 								"End" : "",
-								"Type" : ""
+								"Type" : "",
+								"Check" : false
 							}
 						],
 						"Thursday" :
@@ -100,7 +107,8 @@
 							{
 								"Start" : "",
 								"End" : "",
-								"Type" : ""
+								"Type" : "",
+								"Check" : false
 							}
 						],
 						"Friday" :
@@ -108,7 +116,8 @@
 							{
 								"Start" : "",
 								"End" : "",
-								"Type" : ""
+								"Type" : "",
+								"Check" : false
 							}
 						],
 						"Vacations" :
@@ -123,7 +132,6 @@
 							}
 						]
 			}
-		]
+]
 		}
-	]
-}
+]
