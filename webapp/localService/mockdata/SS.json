@@ -1,0 +1,46 @@
+[
+	{
+				"Username": "I861309",
+				"Password": "HelloWorld",
+				"Name": "Anish Shah",
+				"Monday" : 
+				[
+					{
+						"Start" : "",
+						"End" : ""
+					}
+				],
+				"Tuesday" :
+				[
+					{
+						"Start" : "",
+						"End" : ""
+					},
+					{
+						"Start" : "",
+						"End" : ""
+					}
+				],
+				"Wednesday" :
+				[
+					{
+						"Start" : "",
+						"End" : ""
+					}
+				],
+				"Thursday" :
+				[
+					{
+						"Start" : "",
+						"End" : ""
+					}
+				],
+				"Friday" :
+				[
+					{
+						"Start" : "",
+						"End" : ""
+					}
+				]
+	}
+]
