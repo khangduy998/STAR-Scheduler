@@ -8,7 +8,8 @@ sap.ui.define( ["sap/ui/core/mvc/Controller","sap/ui/core/routing/History", "sap
 		_onRouteMatched: function(oEvent) {
 			//this._coopID = oEvent.getParameter("arguments").coopID;
 			this.user = '0';
-			this.getView().bindElement("/StudentSchedule/" + this.user);
+			this.getOwnerComponent().getModel("Intern");
+			
 		},
 		onSelectionChange: function(oEvent) {
 	
