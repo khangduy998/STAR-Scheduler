@@ -1,0 +1,25 @@
+<mvc:View controllerName="STARSchedule.STARSchedule.controller.AddStudentForm" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:tnt="sap.tnt" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="STAR Schedule" showNavButton="true" navButtonPress="onNavBack" class="sapUiResponsiveContentPadding">
+				<content>
+					<tnt:ToolHeader>
+						<ToolbarSpacer/>
+						<Text text="Welcome"/>
+						<ToolbarSpacer/>
+					</tnt:ToolHeader>
+					
+					<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+						<items>
+								<Input placeholder="First Name"/>
+								<Input placeholder= "Last Name"/>
+								<Input placeholder="SAP email"/>
+								<Button width="12rem" text="Submit"  press="AssStudent"/>
+						</items>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

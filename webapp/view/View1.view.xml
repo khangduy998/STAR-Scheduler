@@ -14,10 +14,9 @@
 						<items>
 							<Label text="Login using your credentials.."/>
 								<Input placeholder="user name"/>
-								<Input placeholder="password"/>	
+								<Input placeholder="password" type="Password"/>	
 								<Button width="12rem" text="Login"  press="onLoggedIn"/>
 						</items>
-						
 					</VBox>
 				</content>
 			</Page>
