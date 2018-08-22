@@ -49,6 +49,15 @@ sap.ui.define([
 			}).addStyleClass('sapMOTAPopover sapTntToolHeaderPopover');
 
 			oPopover.openBy(oEvent.getSource());
+		},
+		OnNavToInOffice: function (){
+			this.getOwnerComponent().getRouter().navTo("ManagerInternTable");
+		},
+		OnNavToWorkingRemotely: function (){
+			this.getOwnerComponent().getRouter().navTo("ManagerInternTable");
+		},
+		OnNavToVacation: function (){
+			this.getOwnerComponent().getRouter().navTo("ManagerInternTable");
 		}
 	});
 

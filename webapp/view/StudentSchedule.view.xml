@@ -4,13 +4,6 @@
 		<pages>
 			<Page title="STAR Schedule">
 				<content>
-					<tnt:ToolHeader>
-						<Button icon="sap-icon://menu2" type="transparent"/>
-						<ToolbarSpacer/>
-						<Text text="{Username}"/>
-						<ToolbarSpacer/>
-						<Button icon="sap-icon://log" type="transparent"/>
-					</tnt:ToolHeader>
 					
 				</content>
 			</Page>

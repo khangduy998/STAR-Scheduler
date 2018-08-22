@@ -97,6 +97,13 @@
 					"target": [
 						"StudentSchedule"
 					]
+				},
+				{
+					"name": "ManagerInternTable",
+					"pattern": "ManagerInternTable",
+					"target": [
+						"ManagerInternTable"
+					]
 				}
 				
 			],
@@ -119,7 +126,12 @@
 				"StudentSchedule": {
 					"viewType": "XML",
 					"viewName": "StudentSchedule"
+				},
+				"ManagerInternTable": {
+					"viewType": "XML",
+					"viewName": "ManagerInternTable"
 				}
+				
 			}
 		}
 	}
