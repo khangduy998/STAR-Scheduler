@@ -11,7 +11,7 @@ sap.ui.define([
 			},
 			onItemPressed:function(oEvent){
 				var sKey=oEvent.getParameter("listItem").getId().substr(-1);
-				this.getRouter().navTo("StudentSchedule", {
+				this.getOwnerComponent().getRouter().navTo("StudentSchedule", {
 					Muser : "0",
 					Iuser : sKey
 				});
