@@ -1,0 +1,88 @@
+{
+	"Intern" :	[
+			{
+						"Username": "I861309",
+						"Password": "HelloWorld",
+						"Name": "Anish Shah",
+						"Monday" : 
+						[
+							{
+								"Start" : "9am",
+								"End" : "10am"
+							}
+						],
+						"Tuesday" :
+						[
+							{
+								"Start" : "2pm",
+								"End" : "3pm"
+							},
+							{
+								"Start" : "4pm",
+								"End" : "5pm"
+							}
+						],
+						"Wednesday" :
+						[
+							{
+								"Start" : "11am",
+								"End" : "2pm"
+							}
+						],
+						"Thursday" :
+						[
+							{
+								"Start" : "8am",
+								"End" : "9am"
+							}
+						],
+						"Friday" :
+						[
+							{
+								"Start" : "9am",
+								"End" : "10am"
+							}
+						]
+			},
+			{
+						"Username": "I869431",
+						"Password": "WorldHello",
+						"Name": "Khang Huynh",
+						"Monday" : 
+						[
+							{
+								"Start" : "",
+								"End" : ""
+							}
+						],
+						"Tuesday" :
+						[
+							{
+								"Start" : "",
+								"End" : ""
+							}
+						],
+						"Wednesday" :
+						[
+							{
+								"Start" : "",
+								"End" : ""
+							}
+						],
+						"Thursday" :
+						[
+							{
+								"Start" : "",
+								"End" : ""
+							}
+						],
+						"Friday" :
+						[
+							{
+								"Start" : "",
+								"End" : ""
+							}
+						]
+			}
+		]
+}

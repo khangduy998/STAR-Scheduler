@@ -90,6 +90,13 @@
 					"target": [
 						"login"
 					]
+				},
+				{
+					"name": "StudentSchedule",
+					"pattern": "StudentSchedule/:Username:",
+					"target": [
+						"StudentSchedule"
+					]
 				}
 				
 			],
@@ -108,6 +115,10 @@
 				"login": {
 					"viewType": "XML",
 					"viewName": "login"
+				},
+				"StudentSchedule": {
+					"viewType": "XML",
+					"viewName": "StudentSchedule"
 				}
 			}
 		}

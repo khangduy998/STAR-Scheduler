@@ -1,0 +1,15 @@
+{
+	"Managers" : 
+	[
+		{
+			"Username" : "I123456",
+			"Password" : "ImJune",
+			"Name" : "June Huynh",
+			"Interns" : 
+				[
+					{ "Username" : "I861309"},
+					{ "Username" : "I869431"}
+				]
+		}
+	]
+}
