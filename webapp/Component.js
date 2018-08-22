@@ -1,8 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"STARSchedule/STARSchedule/model/models"
-], function (UIComponent, Device, models) {
+	"STARSchedule/STARSchedule/model/models",
+	"sap/ui/model/json/JSONModel"
+], function (UIComponent, Device, models, JSONModel) {
 	"use strict";
 
 	return UIComponent.extend("STARSchedule.STARSchedule.Component", {
@@ -17,6 +18,10 @@ sap.ui.define([
 		 * @override
 		 */
 		init: function () {
+			
+			var oModel = new JSONModel("localService/mockdata/SS.json");
+			this.setModel(oModel);
+
 			// call the base component's init function
 			UIComponent.prototype.init.apply(this, arguments);
 

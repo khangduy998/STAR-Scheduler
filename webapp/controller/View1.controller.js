@@ -6,6 +6,7 @@ sap.ui.define([
 	return Controller.extend("STARSchedule.STARSchedule.controller.View1", {
 			onLoggedIn: function(){
 				this.getOwnerComponent().getRouter().navTo("LogInView");
+				console.log(this.getView().getModel());
 			}
 	});
 });

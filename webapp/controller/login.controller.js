@@ -4,7 +4,8 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("STARSchedule.login.controller.login", {
-
+		
+		console.log(this.getView().getModel());
 		/**
 		 * Called when a controller is instantiated and its View controls (if available) are already created.
 		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
