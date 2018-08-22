@@ -8,39 +8,56 @@
 						[
 							{
 								"Start" : "9am",
-								"End" : "10am"
+								"End" : "10am",
+								"Type" : true
 							}
 						],
 						"Tuesday" :
 						[
 							{
 								"Start" : "2pm",
-								"End" : "3pm"
+								"End" : "3pm",
+								"Type" : false
 							},
 							{
 								"Start" : "4pm",
-								"End" : "5pm"
+								"End" : "5pm",
+								"Type" : false
 							}
 						],
 						"Wednesday" :
 						[
 							{
 								"Start" : "11am",
-								"End" : "2pm"
+								"End" : "2pm",
+								"Type" : true
 							}
 						],
 						"Thursday" :
 						[
 							{
 								"Start" : "8am",
-								"End" : "9am"
+								"End" : "9am",
+								"Type" : false
 							}
 						],
 						"Friday" :
 						[
 							{
 								"Start" : "9am",
-								"End" : "10am"
+								"End" : "10am",
+								"Type" : false
+							}
+						],
+						"Vacations" :
+						[
+							{
+								"Start" : "August 23, 2018",
+								"End" : "August 26, 2018"
+							},
+							{
+								"Start" : "September 23, 2018",
+								"End" : "September 27, 2018"
 							}
 						]
 			},
@@ -81,6 +98,17 @@
 							{
 								"Start" : "",
 								"End" : ""
+							}
+						],
+						"Vacations" :
+						[
+							{
+								"Start" : "August 23, 2018",
+								"End" : "August 26, 2018"
+							},
+							{
+								"Start" : "September 23, 2018",
+								"End" : "September 27, 2018"
 							}
 						]
 			}

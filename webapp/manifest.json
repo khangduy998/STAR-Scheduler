@@ -93,7 +93,7 @@
 				},
 				{
 					"name": "StudentSchedule",
-					"pattern": "StudentSchedule/:Username:",
+					"pattern": "StudentSchedule/:user:",
 					"target": [
 						"StudentSchedule"
 					]
