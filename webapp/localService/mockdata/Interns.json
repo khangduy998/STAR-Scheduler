@@ -69,35 +69,40 @@
 						[
 							{
 								"Start" : "",
-								"End" : ""
+								"End" : "",
+								"Type" : ""
 							}
 						],
 						"Tuesday" :
 						[
 							{
 								"Start" : "",
-								"End" : ""
+								"End" : "",
+								"Type" : ""
 							}
 						],
 						"Wednesday" :
 						[
 							{
 								"Start" : "",
-								"End" : ""
+								"End" : "",
+								"Type" : ""
 							}
 						],
 						"Thursday" :
 						[
 							{
 								"Start" : "",
-								"End" : ""
+								"End" : "",
+								"Type" : ""
 							}
 						],
 						"Friday" :
 						[
 							{
 								"Start" : "",
-								"End" : ""
+								"End" : "",
+								"Type" : ""
 							}
 						],
 						"Vacations" :
