@@ -1,0 +1,43 @@
+<mvc:View
+	controllerName="STARSchedule.STARSchedule.controller.ManagerInternTable"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page id="EmployeeOverviewParent" title="Intern Table"
+		showNavButton="true"
+		navButtonPress="onNavBack"
+		class="sapUiResponsiveContentPadding">
+		<content>
+			<Table id="employeesTable"
+		   items="{Managers>/0/Intern}"
+		   itemPress="onItemPressed">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Intern Table" level="H2"/>
+				<ToolbarSpacer />
+				<SearchField id="searchField" search="onSearchEmployeesTable" width="50%"/>
+				<Button icon="sap-icon://sort" press="onSortButtonPressed" />
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column ><Text text="Name"/></Column>
+			<Column  demandPopin="true"><Text text="Start Time"/></Column>
+			<Column  demandPopin="true"><Text text="End Time"/></Column>
+			<Column  minScreenWidth="Tablet" demandPopin="true"><Text text="Check In"/></Column>
+			
+		</columns>
+		<items>
+			<ColumnListItem type="Active">
+				<cells>
+					<Text text="{Managers>Name}"/>
+					<Text text="{FirstName}"/>
+					<Text text="{LastName}"/>
+					<Text text="{Address}"/>
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+		</content>
+	</Page>
+	
+</mvc:View>

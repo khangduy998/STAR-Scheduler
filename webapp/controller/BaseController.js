@@ -52,13 +52,15 @@ sap.ui.define([
 			 * @public
 			 */
 			onNavBack : function() {
-				var sPreviousHash = History.getInstance().getPreviousHash(),
-					oCrossAppNavigator = sap.ushell.Container.getService("CrossApplicationNavigation");
+				var sPreviousHash = History.getInstance().getPreviousHash();
 
-					if (sPreviousHash !== undefined || !oCrossAppNavigator.isInitialNavigation()) {
+				if (sPreviousHash !== undefined) {
+					// The history contains a previous entry
 					history.go(-1);
 				} else {
-					this.getRouter().navTo("master", {}, true);
+					// Otherwise we go backwards with a forward history
+					var bReplace = true;
+					this.getRouter().navTo("", {}, bReplace);
 				}
 			}
 
