@@ -7,7 +7,7 @@
 		navButtonPress="onNavBack"
 		class="sapUiResponsiveContentPadding">
 		<content>
-			<Table id="employeesTable"
+			<Table id="interntable"
 		   items="{Managers>/0/Intern}"
 		   itemPress="onItemPressed">
 		<headerToolbar>

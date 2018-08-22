@@ -100,7 +100,7 @@
 				},
 				{
 					"name": "ManagerInternTable",
-					"pattern": "ManagerInternTable",
+					"pattern": "ManagerInternTable/:type:",
 					"target": [
 						"ManagerInternTable"
 					]

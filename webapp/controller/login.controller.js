@@ -51,7 +51,8 @@ sap.ui.define([
 			oPopover.openBy(oEvent.getSource());
 		},
 		OnNavToInOffice: function (){
-			this.getOwnerComponent().getRouter().navTo("ManagerInternTable");
+			var sType="true";
+			this.getOwnerComponent().getRouter().navTo("ManagerInternTable",{type:sType});
 		},
 		OnNavToWorkingRemotely: function (){
 			this.getOwnerComponent().getRouter().navTo("ManagerInternTable");
