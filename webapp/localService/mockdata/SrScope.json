@@ -1,0 +1,43 @@
+[{
+					"QualiID": "OSD SD",
+					"Role": "Onsite TL",
+					"cod": "10",
+					"dteam": "CoE NA/IRE",
+					"sd": "5/5/2018",
+					"st": "9:00",
+					"ed": "12/5/2018",
+					
+					"et": "18:00"
+				}, {
+					"QualiID": "OSD PP",
+					"Role": "Remote TL",
+					"cod": "10",
+					"dteam": "CoE NA/IRE",
+					"sd": "5/5/2018",
+					"st": "10:00",
+					"ed": "12/5/2018",
+					
+					"et": "18:00"
+				}, {
+					"QualiID": "OSD MM",
+					"Role": "Onsite ",
+					"cod": "10",
+					"dteam": "CoE NA/IRE",
+					"sd": "5/5/2018",
+					"st": "9:00",
+					"ed": "12/5/2018",
+					
+					"et": "18:00"
+				}, {
+					"QualiID": "OSD FIN",
+					"Role": "Remote ",
+					"cod": "10",
+					"dteam": "CoE NA/IRE",
+					"sd": "5/5/2018",
+					"st": "9:00",
+					"ed": "12/5/2018",
+					
+					"et": "18:00"
+				}
+
+			]

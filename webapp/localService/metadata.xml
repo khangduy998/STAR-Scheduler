@@ -1,0 +1,76 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm"
+			Namespace="sap.hana.john">
+			<EntityType Name="ServiceRequestType">
+				<Key>
+					<PropertyRef Name="ServiceNum"/>
+				</Key>
+				<Property Name="ServiceNum" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="State" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Customer" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Action" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Date" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="DeplR" Type="Edm.String" Nullable="false" MaxLength="100"/>
+			</EntityType>
+			<EntityType Name="ApprovalType">
+				<Key>
+					<PropertyRef Name="Rule"/>
+				</Key>
+				<Property Name="Rule" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="State" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Responsible" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Action" Type="Edm.String" Nullable="false" MaxLength="100"/>
+			</EntityType>
+			<EntityType Name="SrScopeType">
+				<Key>
+					<PropertyRef Name="QualiID"/>
+				</Key>
+				<Property Name="QualiID" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Role" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="cod" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="dteam" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="sd" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="st" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="ed" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="et" Type="Edm.String" Nullable="false" MaxLength="100"/>
+			</EntityType>
+			<EntityType Name="ProcessorsType">
+				<Key>
+					<PropertyRef Name="Inum"/>
+				</Key>
+				<Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Inum" Type="Edm.String" Nullable="false" MaxLength="100"/>
+			</EntityType>
+			<EntityType Name="LogActivitiesType">
+				<Key>
+					<PropertyRef Name="Name"/>
+				</Key>
+				<Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Action" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="TimeStamp" Type="Edm.String" Nullable="false" MaxLength="100"/>
+			</EntityType>
+			<EntityType Name="SOStatusType">
+				<Key>
+					<PropertyRef Name="service_Order"/>
+				</Key>
+				<Property Name="service_Order" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="State" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Date" Type="Edm.String" Nullable="false" MaxLength="100"/>
+				<Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="100"/>
+			</EntityType>
+			
+			<EntityContainer Name="Project" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="ServiceRequest" EntityType="sap.hana.john.ServiceRequestType"/>
+				<EntitySet Name="Approval" EntityType="sap.hana.john.ApprovalType"/>
+				<EntitySet Name="SrScope" EntityType="sap.hana.john.SrScopeType"/>
+				<EntitySet Name="Processors" EntityType="sap.hana.john.ProcessorsType"/>
+				<EntitySet Name="LogActivities" EntityType="sap.hana.john.LogActivitiesType"/>
+				<EntitySet Name="SOStatus" EntityType="sap.hana.john.SOStatusType"/>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

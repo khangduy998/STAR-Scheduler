@@ -1,0 +1,50 @@
+ [{
+				"ServiceNum": "9723453",
+				"Status": "Violation",
+				"State": "Error",
+				"Customer": "Tesla",
+				"Action": "Platform Design Support",
+				"Date": "12-June-2018",
+				"DeplR": "VPR"
+			
+			}, {
+				"ServiceNum": "9723481",
+				"Status": "Scoped",
+				"State": "Success",
+				"Customer": "Caterpillar",
+				"Action": "Technical Architecture workshop",
+				"Date": "12-June-2018",
+				"DeplR": "HDR"
+			}, {
+				"ServiceNum": "9113453",
+				"Status": "In Scoping",
+				"State": "Success",
+				"Customer": "Agilent Technologies",
+				"Action": "Build Design support",
+				"Date": "12-June-2018",
+				"DeplR": "VPR"
+			}, {
+					"ServiceNum": "9723429",
+				"Status": "New",
+				"State": "Success",
+				"Customer": "ExxonMobil",
+				"Action": "Migration Planning",
+				"Date": "12-June-2018",
+				"DeplR": "VPR"
+			}, {
+				"ServiceNum": "9723583",
+				"Status": "SO Created",
+				"State": "Success",
+				"Customer": "Apple",
+				"Action": "Build Design Support",
+				"Date": "12-June-2018",
+				"DeplR": "HDR"
+			}, {
+				"ServiceNum": "9722333",
+				"Status": "Scoped",
+				"State": "Success",
+				"Customer": "Loblaw",
+				"Action": "Migration Planning",
+				"Date": "12-June-2018",
+				"DeplR": "HDR"
+			}]

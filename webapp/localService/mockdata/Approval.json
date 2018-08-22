@@ -1,0 +1,31 @@
+[{
+					"Rule": "Scope",
+					"Status": "Scoped",
+					"State": "Success",
+					"Responsible": "Sridhar S",
+					"Action": ""
+
+				}, {
+					"Rule": "Very Late Onsite",
+					"Status": "No Violation",
+					"State": "Success",
+					"Responsible": "",
+					"Action": ""
+
+				}, {
+					"Rule": "Short Onsite",
+					"Status": "Violation",
+					"Responsible": "John Doe",
+					"State": "Error",
+					"Action": ""
+
+				}, {
+					"Rule": "Other Region Onsite",
+					"Status": "Approval Pending",
+					"Responsible": "Peter Arndt",
+					"Action": "",
+
+					"State": "Warning"
+				}
+
+			]
