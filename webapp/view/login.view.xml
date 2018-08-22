@@ -22,6 +22,7 @@
 						<OverflowToolbarLayoutData priority="NeverOverflow" />
 					</layoutData>
 				</Button>
+				
 		</tnt:ToolHeader>
 		
 		<!--Tiles functionality -->
