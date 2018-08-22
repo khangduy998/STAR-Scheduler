@@ -19,8 +19,10 @@ sap.ui.define([
 		 */
 		init: function () {
 			
-			var oModel = new JSONModel("localService/mockdata/SS.json");
-			this.setModel(oModel);
+			var InternModel = new JSONModel("localService/mockdata/Interns.json");
+			var ManagerModel = new JSONModel("localService/mockdata/Managers.json");
+			this.setModel(InternModel, "Interns");
+			this.setModel(ManagerModel, "Managers");
 
 			// call the base component's init function
 			UIComponent.prototype.init.apply(this, arguments);
