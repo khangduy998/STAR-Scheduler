@@ -1,7 +1,10 @@
-sap.ui.define( ["sap/ui/core/mvc/Controller","sap/ui/core/routing/History", "sap/ui/Device"], function (Controller, History, Device) {
+sap.ui.define([
+	"sap/ui/core/mvc/Controller",
+	"STARSchedule/STARSchedule/controller/BaseController"
+], function (Controller,BaseController) {
 	"use strict";
 
-	return Controller.extend("STARSchedule.STARSchedule.controller.StudentSchedule", {
+	return BaseController.extend("STARSchedule.STARSchedule.controller.StudentSchedule", {
 		onInit : function () {
 			//console.log(this.getOwnerComponent().getRouter().getRoute("StudentSchedule").attachPatternMatched(this._onRouteMatched, this));
 			this.getOwnerComponent().getRouter().getRoute("StudentSchedule").attachPatternMatched(this._onRouteMatched, this);
@@ -9,21 +12,15 @@ sap.ui.define( ["sap/ui/core/mvc/Controller","sap/ui/core/routing/History", "sap
 		},
 		_onRouteMatched: function(oEvent) {
 			//this._coopID = oEvent.getParameter("arguments").coopID;
-			console.log(oEvent);
-			this.Muser = 0;
-			this.Iuser = 0;
-			console.log(this.getView());
-			//this.getView().bindElement("/Manager/" + this.Muser + "/Intern/" + this.Iuser);
-			//this.getView()
+			this.Muser = oEvent.getParameter("arguments").Muser;
+			this.Iuser = oEvent.getParameter("arguments").Iuser;
+			this.getView().bindElement({
+				path : "/" + this.Muser + "/Intern/" + this.Iuser, 
+				model : "Managers"
+			});
 			
-		},
-		onSelectionChange: function(oEvent) {
-	
-		},
-		onNavBack : function() {
-			var sPreviousHash = History.getInstance().getPreviousHash();
+		//DateTime of today, get only the day, and then get the property fields of that day as the name of that day is the key
 		}
-
 	});
 
 }, /* bExport= */ true);

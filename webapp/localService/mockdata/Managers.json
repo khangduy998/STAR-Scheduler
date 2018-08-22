@@ -78,27 +78,27 @@
 						"Monday" : 
 						[
 							{
-								"Start" : "",
-								"End" : "",
-								"Type" : "",
+								"Start" : "9am",
+								"End" : "5pm",
+								"Type" : true,
 								"Check" : false
 							}
 						],
 						"Tuesday" :
 						[
 							{
-								"Start" : "",
-								"End" : "",
-								"Type" : "",
+								"Start" : "12am",
+								"End" : "1pm",
+								"Type" : false,
 								"Check" : false
 							}
 						],
 						"Wednesday" :
 						[
 							{
-								"Start" : "",
-								"End" : "",
-								"Type" : "",
+								"Start" : "2pm",
+								"End" : "5pm",
+								"Type" : true,
 								"Check" : false
 							}
 						],
@@ -114,9 +114,9 @@
 						"Friday" :
 						[
 							{
-								"Start" : "",
-								"End" : "",
-								"Type" : "",
+								"Start" : "9am",
+								"End" : "5pm",
+								"Type" : true,
 								"Check" : false
 							}
 						],

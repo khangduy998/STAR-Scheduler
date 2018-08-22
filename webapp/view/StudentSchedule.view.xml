@@ -2,9 +2,140 @@
 	displayBlock="true" xmlns="sap.m">
 	<App id="idAppControl">
 		<pages>
-			<Page title="STAR Schedule">
+			<Page title="{Managers>Name}" showNavButton="true"
+			navButtonPress="onNavBack">
 				<content>
-					
+					<Table id="Monday"
+					items="{Managers>Monday}">
+						<headerToolbar>
+							<Toolbar style="Clear">
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+								<Title text="Monday" level="H2"/>
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+								
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column  demandPopin="true"><Text text="Start Time"/></Column>
+							<Column  demandPopin="true"><Text text="End Time"/></Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{Managers>Start}"/>
+									<Text text="{Managers>End}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<Table id="Tuesday"
+					items="{Managers>Tuesday}">
+						<headerToolbar>
+							<Toolbar style="Clear">
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+								<Title text="Tuesday" level="H2"/>
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column  demandPopin="true"><Text text="Start Time"/></Column>
+							<Column  demandPopin="true"><Text text="End Time"/></Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{Managers>Start}"/>
+									<Text text="{Managers>End}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<Table id="Wednesday"
+					items="{Managers>Wednesday}">
+						<headerToolbar>
+							<Toolbar style="Clear">
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+								<Title text="Wednesday" level="H2"/>
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column  demandPopin="true"><Text text="Start Time"/></Column>
+							<Column  demandPopin="true"><Text text="End Time"/></Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{Managers>Start}"/>
+									<Text text="{Managers>End}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<Table id="Thursday"
+					items="{Managers>Thursday}">
+						<headerToolbar>
+							<Toolbar style="Clear">
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+								<Title text="Thursday" level="H2"/>
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column  demandPopin="true"><Text text="Start Time"/></Column>
+							<Column  demandPopin="true"><Text text="End Time"/></Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{Managers>Start}"/>
+									<Text text="{Managers>End}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<Table id="Friday"
+					items="{Managers>Friday}">
+						<headerToolbar style="Clear">
+							<Toolbar>
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+								<Title text="Friday" level="H2"/>
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column  demandPopin="true"><Text text="Start Time"/></Column>
+							<Column  demandPopin="true"><Text text="End Time"/></Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{Managers>Start}"/>
+									<Text text="{Managers>End}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
 				</content>
 			</Page>
 		</pages>
