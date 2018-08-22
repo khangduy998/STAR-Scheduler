@@ -24,7 +24,7 @@ sap.ui.define([
 				bType=true;
 			}
 			var aFilters=[];
-			var oFilter=new sap.ui.model.Filter("Username",sap.ui.model.FilterOperator.Contains,"I123456");
+			var oFilter=new sap.ui.model.Filter("Monday/0/Type",sap.ui.model.FilterOperator.EQ,bType);
 			aFilters.push(oFilter);
 			this.getView().byId("interntable").getBinding("items").filter(aFilters);
 		}
