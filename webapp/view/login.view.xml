@@ -53,6 +53,12 @@
 							<ImageContent src="sap-icon://add-employee" />
 						</TileContent>
 					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Intern List"
+						 press="OnNavToInternList">
+						<TileContent>
+							<ImageContent src="sap-icon://activity-individual" />
+						</TileContent>
+					</GenericTile>
 					</content>
 	</Page>
 </mvc:View>

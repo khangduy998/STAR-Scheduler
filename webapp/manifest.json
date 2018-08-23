@@ -106,6 +106,13 @@
 					]
 				},
 				{
+					"name": "InternList",
+					"pattern": "InternList",
+					"target": [
+						"InternList"
+					]
+				},
+				{
 					"name": "VacationTable",
 					"pattern": "VacationTable",
 					"target": [
@@ -144,6 +151,10 @@
 				"ManagerInternTable": {
 					"viewType": "XML",
 					"viewName": "ManagerInternTable"
+				},
+				"InternList": {
+					"viewType": "XML",
+					"viewName": "InternList"
 				},
 				"VacationTable": {
 					"viewType": "XML",

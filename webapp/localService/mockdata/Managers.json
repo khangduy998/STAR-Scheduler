@@ -62,33 +62,29 @@
 						"Vacations" :
 						[
 							{
-								"Start" : "August 23, 2018",
-								"End" : "August 26, 2018"
-							},
-							{
-								"Start" : "September 23, 2018",
-								"End" : "September 27, 2018"
+								"Start" : "August 23, 9999",
+								"End" : "August 26, 9999"
 							}
 						]
 			},
 			{
-						"Username": "I869431",
-						"Password": "WorldHello",
-						"Name": "Khang Huynh",
+						"Username": "I868328",
+						"Password": "HelloWorld",
+						"Name": "Sufi Noor",
 						"Monday" : 
 						[
 							{
-								"Start" : "9am",
-								"End" : "5pm",
-								"Type" : true,
+								"Start" : "10am",
+								"End" : "2pm",
+								"Type" : false,
 								"Check" : false
 							}
 						],
 						"Tuesday" :
 						[
 							{
-								"Start" : "12am",
-								"End" : "1pm",
+								"Start" : "1pm",
+								"End" : "5pm",
 								"Type" : false,
 								"Check" : false
 							}
@@ -96,9 +92,9 @@
 						"Wednesday" :
 						[
 							{
-								"Start" : "2pm",
-								"End" : "5pm",
-								"Type" : true,
+								"Start" : "",
+								"End" : "",
+								"Type" : "None",
 								"Check" : false
 							}
 						],
@@ -123,15 +119,253 @@
 						"Vacations" :
 						[
 							{
-								"Start" : "August 23, 2018",
-								"End" : "August 26, 2018"
+								"Start" : "August 24, 2018",
+								"End" : "September 7, 2018"
+							}
+							
+						]
+			},
+			{
+						"Username": "I869357",
+						"Password": "HelloWorld",
+						"Name": "Shakthi Panneer",
+						"Monday" : 
+						[
+							{
+								"Start" :"",
+								"End" : "",
+								"Type" : "None",
+								"Check" : false
+							}
+						],
+						"Tuesday" :
+						[
+							{
+								"Start" : "12pm",
+								"End" : "8pm",
+								"Type" : true,
+								"Check" : false
+							}
+						],
+						"Wednesday" :
+						[
+							{
+								"Start" : "",
+								"End" : "",
+								"Type" : "None",
+								"Check" : false
+							}
+						],
+						"Thursday" :
+						[
+							{
+								"Start" : "12pm",
+								"End" : "8pm",
+								"Type" : false,
+								"Check" : false
+							}
+						],
+						"Friday" :
+						[
+							{
+								"Start" : "",
+								"End" : "",
+								"Type" : "None",
+								"Check" : false
+							}
+						],
+						"Vacations" :
+						[
+							{
+								"Start" : "January 31, 9999",
+								"End" : "January 31, 9999"
+							}
+						]
+			},
+			{
+						"Username": "I869396",
+						"Password": "HelloWorld",
+						"Name": "Nikhil Patel",
+						"Monday" : 
+						[
+							{
+								"Start" : "",
+								"End" : "",
+								"Type" : "None",
+								"Check" : false
+							}
+						],
+						"Tuesday" :
+						[
+							{
+								"Start" : "12pm",
+								"End" : "3:30pm",
+								"Type" : false,
+								"Check" : false
+							}
+						],
+						"Wednesday" :
+						[
+							{
+								"Start" : "",
+								"End" : "",
+								"Type" : "None",
+								"Check" : false
+							}
+						],
+						"Thursday" :
+						[
+							{
+								"Start" : "11am",
+								"End" : "6pm",
+								"Type" : true,
+								"Check" : false
+							}
+						],
+						"Friday" :
+						[
+							{
+								"Start" : "7am",
+								"End" : "10:30am",
+								"Type" : false,
+								"Check" : false
 							},
 							{
-								"Start" : "September 23, 2018",
-								"End" : "September 27, 2018"
+								"Start" : "2pm",
+								"End" : "7pm",
+								"Type" : false,
+								"Check" : false
+							}
+						],
+						"Vacations" :
+						[
+							{
+								"Start" : "August 23, 9999",
+								"End" : "August 26, 9999"
+							}
+						]
+			},
+			{
+						"Username": "I869431",
+						"Password": "WorldHello",
+						"Name": "Khang Huynh",
+						"Monday" : 
+						[
+							{
+								"Start" : "2pm",
+								"End" : "7pm",
+								"Type" : false,
+								"Check" : false
+							}
+						],
+						"Tuesday" :
+						[
+							{
+								"Start" : "",
+								"End" : "",
+								"Type" : "None",
+								"Check" : false
+							}
+						],
+						"Wednesday" :
+						[
+							{
+								"Start" : "2pm",
+								"End" : "6pm",
+								"Type" : true,
+								"Check" : false
+							}
+						],
+						"Thursday" :
+						[
+							{
+								"Start" : "12pm",
+								"End" : "3pm",
+								"Type" : false,
+								"Check" : false
+							}
+						],
+						"Friday" :
+						[
+							{
+								"Start" : "3pm",
+								"End" : "7pm",
+								"Type" : true,
+								"Check" : false
+							}
+						],
+						"Vacations" :
+						[
+							{
+								"Start" : "August 23, 9999",
+								"End" : "August 26, 9999"
+							}
+						]
+			},
+			{
+						"Username": "I869370",
+						"Password": "WorldHello",
+						"Name": "Nadia Said",
+						"Monday" : 
+						[
+							{
+								"Start" : "10:30am",
+								"End" : "1:30pm",
+								"Type" : true,
+								"Check" : false
+							}
+						],
+						"Tuesday" :
+						[
+							{
+								"Start" : "12am",
+								"End" : "1pm",
+								"Type" : false,
+								"Check" : false
+							}
+						],
+						"Wednesday" :
+						[
+							{
+								"Start" : "11am",
+								"End" : "3pm",
+								"Type" : false,
+								"Check" : false
+							}
+						],
+						"Thursday" :
+						[
+							{
+								"Start" : "9am",
+								"End" : "11am",
+								"Type" : false,
+								"Check" : false
+							},
+							{
+								"Start" : "1:30pm",
+								"End" : "5:30pm",
+								"Type" : true,
+								"Check" : false
+							}
+						],
+						"Friday" :
+						[
+							{
+								"Start" : "",
+								"End" : "",
+								"Type" : "None",
+								"Check" : false
+							}
+						],
+						"Vacations" :
+						[
+							{
+								"Start" : "August 23, 9999",
+								"End" : "August 26, 9999"
 							}
 						]
 			}
+			
 ]
 		}
 ]

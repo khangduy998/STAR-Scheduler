@@ -10,7 +10,7 @@
 			<Table id="interntable"
 		   items="{Managers>/0/Intern}"
 		   itemPress="onItemPressed"
-		   noDataText="No Intern is in vacation today">
+		   noDataText="No Intern is on vacation today">
 		<headerToolbar>
 			<Toolbar>
 				<Title text="Intern Table" level="H2"/>

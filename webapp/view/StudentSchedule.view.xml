@@ -20,13 +20,15 @@
 						</headerToolbar>
 						<columns>
 							<Column  demandPopin="true"><Text text="Start Time"/></Column>
-							<Column  demandPopin="true"><Text text="End Time"/></Column>
+							<Column  demandPopin="true" ><Text text="End Time"/></Column>
+							<Column  demandPopin="true" minScreenWidth="Tablet"><Text text="In Office"/></Column>
 						</columns>
 						<items>
 							<ColumnListItem>
 								<cells>
 									<Text text="{Managers>Start}"/>
 									<Text text="{Managers>End}"/>
+									<Text text="{Managers>Type}"/>
 								</cells>
 							</ColumnListItem>
 						</items>
@@ -49,12 +51,14 @@
 						<columns>
 							<Column  demandPopin="true"><Text text="Start Time"/></Column>
 							<Column  demandPopin="true"><Text text="End Time"/></Column>
+							<Column  demandPopin="true" minScreenWidth="Tablet"><Text text="In Office"/></Column>
 						</columns>
 						<items>
 							<ColumnListItem>
 								<cells>
 									<Text text="{Managers>Start}"/>
 									<Text text="{Managers>End}"/>
+									<Text text="{Managers>Type}"/>
 								</cells>
 							</ColumnListItem>
 						</items>
@@ -75,12 +79,14 @@
 						<columns>
 							<Column  demandPopin="true"><Text text="Start Time"/></Column>
 							<Column  demandPopin="true"><Text text="End Time"/></Column>
+							<Column  demandPopin="true" minScreenWidth="Tablet"><Text text="In Office"/></Column>
 						</columns>
 						<items>
 							<ColumnListItem>
 								<cells>
 									<Text text="{Managers>Start}"/>
 									<Text text="{Managers>End}"/>
+									<Text text="{Managers>Type}"/>
 								</cells>
 							</ColumnListItem>
 						</items>
@@ -101,12 +107,14 @@
 						<columns>
 							<Column  demandPopin="true"><Text text="Start Time"/></Column>
 							<Column  demandPopin="true"><Text text="End Time"/></Column>
+							<Column  demandPopin="true" minScreenWidth="Tablet"><Text text="In Office"/></Column>
 						</columns>
 						<items>
 							<ColumnListItem>
 								<cells>
 									<Text text="{Managers>Start}"/>
 									<Text text="{Managers>End}"/>
+									<Text text="{Managers>Type}"/>
 								</cells>
 							</ColumnListItem>
 						</items>
@@ -127,12 +135,14 @@
 						<columns>
 							<Column  demandPopin="true"><Text text="Start Time"/></Column>
 							<Column  demandPopin="true"><Text text="End Time"/></Column>
+							<Column  demandPopin="true" minScreenWidth="Tablet"><Text text="In Office"/></Column>
 						</columns>
 						<items>
 							<ColumnListItem>
 								<cells>
 									<Text text="{Managers>Start}"/>
 									<Text text="{Managers>End}"/>
+									<Text text="{Managers>Type}"/>
 								</cells>
 							</ColumnListItem>
 						</items>
@@ -153,12 +163,14 @@
 						<columns>
 							<Column  demandPopin="true"><Text text="Start Time"/></Column>
 							<Column  demandPopin="true"><Text text="End Time"/></Column>
+							<Column  demandPopin="true" minScreenWidth="Tablet"><Text text="In Office"/></Column>
 						</columns>
 						<items>
 							<ColumnListItem>
 								<cells>
 									<Text text="{Managers>Start}"/>
 									<Text text="{Managers>End}"/>
+									<Text text="{Managers>Type}"/>
 								</cells>
 							</ColumnListItem>
 						</items>

@@ -1,8 +1,8 @@
 <mvc:View
-	controllerName="STARSchedule.STARSchedule.controller.ManagerInternTable"
+	controllerName="STARSchedule.STARSchedule.controller.InternList"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
-	<Page id="EmployeeOverviewParent" title="Intern Table"
+	<Page title="Intern Table"
 		showNavButton="true"
 		navButtonPress="onNavBack"
 		class="sapUiResponsiveContentPadding">
@@ -10,7 +10,7 @@
 			<Table id="interntable"
 		   items="{Managers>/0/Intern}"
 		   itemPress="onItemPressed"
-		   noDataText="No Intern has this schedule today">
+		   noDataText="No Intern">
 		<headerToolbar>
 			<Toolbar>
 				<Title text="Intern Table" level="H2"/>
@@ -21,23 +21,13 @@
 		</headerToolbar>
 		<columns>
 			<Column ><Text text="Name"/></Column>
-			<Column  demandPopin="true"><Text text="Start Time"/></Column>
-			<Column  demandPopin="true"><Text text="End Time"/></Column>
-			<Column  minScreenWidth="Tablet" demandPopin="true"><Text text="Check In"/></Column>
+			<Column  demandPopin="true"><Text text="In Office"/></Column>
 			
 		</columns>
 		<items>
 			<ColumnListItem type="Active">
 				<cells>
 					<Text text="{Managers>Name}"/>
-					<VBox>
-					<Text id="starttime"/>
-					<Text id="starttime2"/>
-					</VBox>
-					<VBox>
-					<Text id="endtime"/>
-					<Text id="endtime2"/>
-					</VBox>
 					<Text id="checkin"/>
 					
 				</cells>

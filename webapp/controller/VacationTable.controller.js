@@ -11,8 +11,10 @@ sap.ui.define([
 				//this.getRouter().getRoute("ManagerInternTable").attachPatternMatched(this._onObjectMatched, this);
 				var currentTime=new Date();
 				var oData=this.getOwnerComponent().getModel("Managers").getData();
+				var aBigFilters=[];
 				var aFilters=[];
 				for(var i=0;i<oData[0].Intern.length;i++){
+					
 					for(var j=0;j<oData[0].Intern[i].Vacations.length;j++){
 						var oVacationStart= new Date(oData[0].Intern[i].Vacations[j].Start);
 						var oVacationEnd= new Date(oData[0].Intern[i].Vacations[j].End);
@@ -29,7 +31,9 @@ sap.ui.define([
 					}
 				}
 				this.getView().setModel(this.getOwnerComponent().getModel("Managers"),"Managers");
-				this.getView().byId("interntable").getBinding("items").filter(aFilters);
+				var oBigFilter= new sap.ui.model.Filter({filters: aFilters, and:true});
+				 aBigFilters.push(oBigFilter);
+				this.getView().byId("interntable").getBinding("items").filter(aBigFilters);
 				this.onSortButtonPressed();
 			},
 			onItemPressed:function(oEvent){

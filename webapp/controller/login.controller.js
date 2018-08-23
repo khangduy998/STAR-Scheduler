@@ -66,6 +66,9 @@ sap.ui.define([
 		},
 		OnNavToAddStudent: function (){
 			this.getOwnerComponent().getRouter().navTo("AddStudentForm");
+		},
+		OnNavToInternList: function (){
+			this.getOwnerComponent().getRouter().navTo("InternList");
 		}
 	});
 
