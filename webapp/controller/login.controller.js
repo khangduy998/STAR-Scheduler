@@ -29,6 +29,7 @@ sap.ui.define([
 			evt.getSource().removeTile(tile);
 		},
 		onUserNamePress: function (oEvent) {
+			var	getrouter = this.getOwnerComponent().getRouter();
 			var oPopover = new Popover({
 				showHeader: false,
 				placement: sap.m.PlacementType.Bottom,
@@ -43,7 +44,10 @@ sap.ui.define([
 					}),
 					new Button({
 						text: 'Logout',
-						type: sap.m.ButtonType.Transparent
+						type: sap.m.ButtonType.Transparent,
+						press: function (){
+						getrouter.navTo("RouteView1");
+						}
 					})
 				]
 			}).addStyleClass('sapMOTAPopover sapTntToolHeaderPopover');
