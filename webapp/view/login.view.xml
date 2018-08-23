@@ -41,7 +41,7 @@
 					</GenericTile>
 				
 					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="On Vacation"
-						 mode="HeaderMode" press="OnNavToVacation">
+						 press="OnNavToVacation">
 						<TileContent>
 							<ImageContent src="sap-icon://general-leave-request" />
 						</TileContent>
@@ -56,4 +56,3 @@
 					</content>
 	</Page>
 </mvc:View>
-

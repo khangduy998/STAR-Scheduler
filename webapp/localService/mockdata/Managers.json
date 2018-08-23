@@ -107,7 +107,7 @@
 							{
 								"Start" : "",
 								"End" : "",
-								"Type" : "",
+								"Type" : "None",
 								"Check" : false
 							}
 						],

@@ -60,7 +60,7 @@ sap.ui.define([
 				} else {
 					// Otherwise we go backwards with a forward history
 					var bReplace = true;
-					this.getRouter().navTo("RouteView1", {}, bReplace);
+					this.getRouter().navTo("LogInView", {}, bReplace);
 				}
 			}
 
