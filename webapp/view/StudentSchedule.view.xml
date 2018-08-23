@@ -5,6 +5,33 @@
 			<Page title="{Managers>Name}" showNavButton="true"
 			navButtonPress="onNavBack">
 				<content>
+					<Table id="Today" items="{Managers>}">
+						<headerToolbar>
+							<Toolbar style="Clear">
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+								<Title text="Today's Schedule" titleStyle="H2"/>
+								<ToolbarSpacer>
+									
+								</ToolbarSpacer>
+								
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column  demandPopin="true"><Text text="Start Time"/></Column>
+							<Column  demandPopin="true"><Text text="End Time"/></Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{Managers>Start}"/>
+									<Text text="{Managers>End}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<Title text="Weekly Schedule" titleStyle="H2" width="100%" textAlign="Center" class="sapUiSmallMarginTopBottom"/>
 					<Table id="Monday"
 					items="{Managers>Monday}">
 						<headerToolbar>

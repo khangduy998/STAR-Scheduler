@@ -20,6 +20,25 @@ sap.ui.define([
 			});
 			
 		//DateTime of today, get only the day, and then get the property fields of that day as the name of that day is the key
+		var currentTime=new Date();
+			var currentDay=currentTime.getDay();
+			switch(currentDay){
+				case 1:
+					this.getView().byId("Today").bindElement("Managers>Monday");
+					break;
+				case 2:
+					this.getView().byId("Today").bindElement("Managers>Tuesday");
+					break;
+				case 3:
+					this.getView().byId("Today").bindElement("Managers>Wednesday");
+					break;
+				case 4:
+					this.getView().byId("Today").bindElement("Managers>Thursday");
+					break;
+				case 5:
+					this.getView().byId("Today").bindElement("Managers>Friday");
+					break;
+			}
 		}
 	});
 

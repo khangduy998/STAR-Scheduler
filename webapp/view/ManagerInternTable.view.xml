@@ -9,12 +9,13 @@
 		<content>
 			<Table id="interntable"
 		   items="{Managers>/0/Intern}"
-		   itemPress="onItemPressed">
+		   itemPress="onItemPressed"
+		   noDataText="No Intern has this schedule today">
 		<headerToolbar>
 			<Toolbar>
 				<Title text="Intern Table" level="H2"/>
 				<ToolbarSpacer />
-				<SearchField id="searchField" search="onSearchEmployeesTable" width="50%"/>
+				<SearchField id="searchField" liveChange="onSearch" width="50%"/>
 				<Button icon="sap-icon://sort" press="onSortButtonPressed" />
 			</Toolbar>
 		</headerToolbar>
@@ -29,9 +30,9 @@
 			<ColumnListItem type="Active">
 				<cells>
 					<Text text="{Managers>Name}"/>
-					<Text text="{FirstName}"/>
-					<Text text="{LastName}"/>
-					<Text text="{Address}"/>
+					<Text id="starttime"/>
+					<Text id="endtime"/>
+					<Text id="checkin"/>
 					
 				</cells>
 			</ColumnListItem>
