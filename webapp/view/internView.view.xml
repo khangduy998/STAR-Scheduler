@@ -1,11 +1,11 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:tnt="sap.tnt" controllerName="STARSchedule.STARSchedule.controller.login" height="100%">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout"
+	controllerName="STARSchedule.STARSchedule.controller.login" height="100%">
 	<Page>
-		<content align="center">
-	   <!--Header functionality -->
-		<tnt:ToolHeader>
+		<content align="Center">
+			<!--Header functionality -->
+			<tnt:ToolHeader>
 				<ToolbarSpacer/>
-				<core:Icon src="sap-icon://activate">
-				</core:Icon>
+				<core:Icon src="sap-icon://activate"></core:Icon>
 				<Text text="Welcome" wrapping="false">
 					<layoutData>
 						<OverflowToolbarLayoutData priority="Disappear"/>
@@ -17,21 +17,29 @@
 						<OverflowToolbarLayoutData priority="NeverOverflow"/>
 					</layoutData>
 				</Button>
-				
-		</tnt:ToolHeader>
-		
-		<!--Tiles functionality -->
+			</tnt:ToolHeader>
+			<!--Rating Indicator-->
+			<FlexBox class="sapUiContentPadding" id="flexforstar" alignItems="Center" justifyContent="Center">
+				<items>
+					<Label class="sapUiTinyMarginEnd" text="STAR Rating" labelFor="RI_default"/>
+					<RatingIndicator id="RI_default" maxValue="5" class="sapUiSmallMarginBottom" value="4" editable="false" tooltip="Rating Tooltip"/>
+				</items>
+			</FlexBox>
+			<!--Tiles functionality -->
+			<FlexBox id="flexonthis" alignItems="Center" justifyContent="Center">
+				<items>
 					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Edit Schedule" press="OnNavToInOffice">
 						<TileContent>
 							<ImageContent src="sap-icon://icon-due-date"/>
 						</TileContent>
 					</GenericTile>
-				
 					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Check In" press="OnNavToWorkingRemotely">
 						<TileContent>
 							<ImageContent src="sap-icon://icon-approved"/>
 						</TileContent>
 					</GenericTile>
-					</content>
+				</items>
+			</FlexBox>
+		</content>
 	</Page>
 </mvc:View>
