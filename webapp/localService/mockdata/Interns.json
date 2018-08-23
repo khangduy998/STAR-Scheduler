@@ -1,7 +1,7 @@
 [
 			{
 						"Username": "I861309",
-						"Password": "HelloWorld",
+						"Password": "Anish",
 						"Name": "Anish Shah",
 						"Monday" : 
 						[
@@ -68,8 +68,69 @@
 			},
 			{
 						"Username": "I869431",
-						"Password": "WorldHello",
+						"Password": "Khang",
 						"Name": "Khang Huynh",
+						"Monday" : 
+						[
+							{
+								"Start" : "",
+								"End" : "",
+								"Type" : "",
+								"Check" : false
+							}
+						],
+						"Tuesday" :
+						[
+							{
+								"Start" : "",
+								"End" : "",
+								"Type" : "",
+								"Check" : false
+							}
+						],
+						"Wednesday" :
+						[
+							{
+								"Start" : "",
+								"End" : "",
+								"Type" : "",
+								"Check" : false
+							}
+						],
+						"Thursday" :
+						[
+							{
+								"Start" : "",
+								"End" : "",
+								"Type" : "",
+								"Check" : false
+							}
+						],
+						"Friday" :
+						[
+							{
+								"Start" : "",
+								"End" : "",
+								"Type" : "",
+								"Check" : false
+							}
+						],
+						"Vacations" :
+						[
+							{
+								"Start" : "August 23, 2018",
+								"End" : "August 26, 2018"
+							},
+							{
+								"Start" : "September 23, 2018",
+								"End" : "September 27, 2018"
+							}
+						]
+			},
+			{
+						"Username": "I852870",
+						"Password": "Purav",
+						"Name": "Purav Barot",
 						"Monday" : 
 						[
 							{
