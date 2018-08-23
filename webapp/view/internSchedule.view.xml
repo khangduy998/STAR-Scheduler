@@ -1,0 +1,180 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" controllerName="STARSchedule.STARSchedule.controller.StudentSchedule" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{intern>Name}" showNavButton="true" showFooter="true" navButtonPress="onNavBack">
+				<content>
+					<Title text="Edit Schedule" titleStyle="H2" width="100%" textAlign="Center" class="sapUiSmallMarginTopBottom"/>
+					<Table noDataText="Drop column list items here and columns in the area above" id="monday" Text="Monday" headerText="Monday">
+					    <items>
+					        <ColumnListItem id="item0">
+					            <cells>
+					                <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1"/>
+					                <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1_copy"/>
+					              </cells>
+					        </ColumnListItem>
+					    </items>
+					    <columns>
+					        <Column id="StartTime">
+					            <header>
+					                <Label text="Start Time" id="StarT"/>
+					            </header>
+					        </Column>
+					        <Column id="EndTime">
+					            <header>
+					                <Label text="End Time" id="EndT"/>
+					            </header>
+					        </Column>
+					        </columns></Table><Table xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" noDataText="Drop column list items here and columns in the area above" id="Tuesday" headerText="Tuesday">
+					    <items>
+					        <ColumnListItem id="item0_copy">
+					            <cells>
+					                <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1_copy2"/>
+					                <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1_copy3"/>
+					                </cells>
+					            
+					        </ColumnListItem>
+					        
+					    </items>
+					    <columns>
+					        <Column id="StartTime_copy">
+					            <header>
+					                <Label text="Start Time" id="StarT_copy"/>
+					                
+					            </header>
+					            
+					        </Column>
+					        <Column id="EndTime_copy">
+					            <header>
+					                <Label text="End Time" id="EndT_copy"/>
+					                
+					            </header>
+					            
+					        </Column>
+					        </columns>
+					    <swipeContent>
+					        <Table xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" noDataText="Drop column list items here and columns in the area above" id="Tuesday_copy" headerText="Tuesday">
+					            <items>
+					                <ColumnListItem id="item0_copy2">
+					                    <cells>
+					                        <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1_copy4"/>
+					                        <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1_copy5"/>
+					                        </cells>
+					                    
+					                </ColumnListItem>
+					                
+					            </items>
+					            <columns>
+					                <Column id="StartTime_copy2">
+					                    <header>
+					                        <Label text="Start Time" id="StarT_copy2"/>
+					                        
+					                    </header>
+					                    
+					                </Column>
+					                <Column id="EndTime_copy2">
+					                    <header>
+					                        <Label text="End Time" id="EndT_copy2"/>
+					                        
+					                    </header>
+					                    
+					                </Column>
+					                </columns>
+					            </Table>
+					    </swipeContent>
+					    </Table>
+					    <Table xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" noDataText="Drop column list items here and columns in the area above" id="Wednesday" Text="" headerText="Wednesday">
+					        <items>
+					            <ColumnListItem id="item0_copy4">
+					                <cells>
+					                    <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1_copy8"/>
+					                    <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1_copy9"/>
+					                    </cells>
+					                
+					            </ColumnListItem>
+					            
+					        </items>
+					        <columns>
+					            <Column id="StartTime_copy4">
+					                <header>
+					                    <Label text="Start Time" id="StarT_copy4"/>
+					                    
+					                </header>
+					                
+					            </Column>
+					            <Column id="EndTime_copy4">
+					                <header>
+					                    <Label text="End Time" id="EndT_copy4"/>
+					                    
+					                </header>
+					                
+					            </Column>
+					            </columns>
+					        </Table>
+					    <Table xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" noDataText="Drop column list items here and columns in the area above" id="Thursday" Text="" headerText="Thursday">
+					        <items>
+					            <ColumnListItem id="item0_copy5">
+					                <cells>
+					                    <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1_copy10"/>
+					                    <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1_copy11"/>
+					                    </cells>
+					                
+					            </ColumnListItem>
+					            
+					        </items>
+					        <columns>
+					            <Column id="StartTime_copy5">
+					                <header>
+					                    <Label text="Start Time" id="StarT_copy5"/>
+					                    
+					                </header>
+					                
+					            </Column>
+					            <Column id="EndTime_copy5">
+					                <header>
+					                    <Label text="End Time" id="EndT_copy5"/>
+					                    
+					                </header>
+					                
+					            </Column>
+					            </columns>
+					        </Table>
+					    <Table xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" noDataText="Drop column list items here and columns in the area above" id="Friday" Text="" headerText="Friday">
+					        <items>
+					            <ColumnListItem id="item0_copy6">
+					                <cells>
+					                    <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1_copy12"/>
+					                    <TimePicker xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" displayFormat="h:mm:ss a" localeId="en-US" placeholderSymbol="-" mask="h9:59:59 AB" id="picker1_copy13"/>
+					                    </cells>
+					                
+					            </ColumnListItem>
+					            
+					        </items>
+					        <columns>
+					            <Column id="StartTime_copy6">
+					                <header>
+					                    <Label text="Start Time" id="StarT_copy6"/>
+					                    
+					                </header>
+					                
+					            </Column>
+					            <Column id="EndTime_copy6">
+					                <header>
+					                    <Label text="End Time" id="EndT_copy6"/>
+					                    
+					                </header>
+					                
+					            </Column>
+					            </columns>
+					        </Table>
+				</content>
+				<footer> 
+					<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Save" press="" />
+				<ToolbarSpacer/>
+			</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
