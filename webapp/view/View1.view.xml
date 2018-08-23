@@ -13,8 +13,8 @@
 					<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
 						<items>
 							<Label text="Login using your credentials.."/>
-								<Input placeholder="user name"/>
-								<Input placeholder="password" type="Password"/>	
+								<Input id="username" placeholder="user name"/>
+								<Input id="password" placeholder="password" type="Password"/>	
 								<Button width="12rem" text="Login"  press="onLoggedIn"/>
 						</items>
 					</VBox>
