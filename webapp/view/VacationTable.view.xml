@@ -1,0 +1,42 @@
+<mvc:View
+	controllerName="STARSchedule.STARSchedule.controller.VacationTable"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page title="Intern Table"
+		showNavButton="true"
+		navButtonPress="onNavBack"
+		class="sapUiResponsiveContentPadding">
+		<content>
+			<Table id="interntable"
+		   items="{Managers>/0/Intern}"
+		   itemPress="onItemPressed"
+		   noDataText="No Intern is in vacation today">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Intern Table" level="H2"/>
+				<ToolbarSpacer />
+				<SearchField id="searchField" liveChange="onSearch" width="50%"/>
+				<Button icon="sap-icon://sort" press="onSortButtonPressed" />
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column ><Text text="Name"/></Column>
+			<Column  demandPopin="true"><Text text="Start Time"/></Column>
+			<Column  demandPopin="true"><Text text="End Time"/></Column>
+			
+		</columns>
+		<items>
+			<ColumnListItem type="Active">
+				<cells>
+					<Text text="{Managers>Name}"/>
+					<Text id="starttime"/>
+					<Text id="endtime"/>
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+		</content>
+	</Page>
+	
+</mvc:View>

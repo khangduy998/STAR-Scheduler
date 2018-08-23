@@ -4,41 +4,32 @@ sap.ui.define([
 ], function (Controller,BaseController) {
 	"use strict";
 
-	return BaseController.extend("STARSchedule.STARSchedule.controller.ManagerInternTable", {
+	return BaseController.extend("STARSchedule.STARSchedule.controller.VacationTable", {
 			onInit: function(){
 				
 				//this.getView().setModel(this.getOwnerComponent().getModel("Managers"),"Managers");
-				this.getRouter().getRoute("ManagerInternTable").attachPatternMatched(this._onObjectMatched, this);
+				//this.getRouter().getRoute("ManagerInternTable").attachPatternMatched(this._onObjectMatched, this);
 				var currentTime=new Date();
-				var currentDay=currentTime.getDay();
-				switch(currentDay){
-					case 1:
-						this.getView().byId("starttime").bindText({path:"Managers>Monday/0/Start"});
-						this.getView().byId("endtime").bindText({path:"Managers>Monday/0/End"});
-						this.getView().byId("checkin").bindText({path:"Managers>Monday/0/Check"});
-						break;
-					case 2:
-						this.getView().byId("starttime").bindText({path:"Managers>Tuesday/0/Start"});
-						this.getView().byId("endtime").bindText({path:"Managers>Tuesday/0/End"});
-						this.getView().byId("checkin").bindText({path:"Managers>Tuesday/0/Check"});
-						break;
-					case 3:
-						this.getView().byId("starttime").bindText({path:"Managers>Wednesday/0/Start"});
-						this.getView().byId("endtime").bindText({path:"Managers>Wednesday/0/End"});
-						this.getView().byId("checkin").bindText({path:"Managers>Wednesday/0/Check"});
-						break;
-					case 4:
-						this.getView().byId("starttime").bindText({path:"Managers>Thursday/0/Start"});
-						this.getView().byId("endtime").bindText({path:"Managers>Thursday/0/End"});
-						this.getView().byId("checkin").bindText({path:"Managers>Thursday/0/Check"});
-						break;
-					case 5:
-						this.getView().byId("starttime").bindText({path:"Managers>Friday/0/Start"});
-						this.getView().byId("endtime").bindText({path:"Managers>Friday/0/End"});
-						this.getView().byId("checkin").bindText({path:"Managers>Friday/0/Check"});
-						break;
+				var oData=this.getOwnerComponent().getModel("Managers").getData();
+				var aFilters=[];
+				for(var i=0;i<oData[0].Intern.length;i++){
+					for(var j=0;j<oData[0].Intern[i].Vacations.length;j++){
+						var oVacationStart= new Date(oData[0].Intern[i].Vacations[j].Start);
+						var oVacationEnd= new Date(oData[0].Intern[i].Vacations[j].End);
+						if(oVacationStart<currentTime && currentTime<oVacationEnd){
+							this.getView().byId("starttime").bindText({path:"Managers>Vacations/"+j+"/Start"});
+							this.getView().byId("endtime").bindText({path:"Managers>Vacations/"+j+"/End"});
+							break;
+						}
+						else if(j===oData[0].Intern[i].Vacations.length-1){
+							var oFilter=new sap.ui.model.Filter("Name",sap.ui.model.FilterOperator.NE,oData[0].Intern[i].Name);
+							aFilters.push(oFilter);
+							break;
+						}
+					}
 				}
 				this.getView().setModel(this.getOwnerComponent().getModel("Managers"),"Managers");
+				this.getView().byId("interntable").getBinding("items").filter(aFilters);
 				this.onSortButtonPressed();
 			},
 			onItemPressed:function(oEvent){

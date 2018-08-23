@@ -106,6 +106,13 @@
 					]
 				},
 				{
+					"name": "VacationTable",
+					"pattern": "VacationTable",
+					"target": [
+						"VacationTable"
+					]
+				},
+				{
 					"name": "AddStudentForm",
 					"pattern": "AddStudentForm",
 					"target": [
@@ -137,6 +144,10 @@
 				"ManagerInternTable": {
 					"viewType": "XML",
 					"viewName": "ManagerInternTable"
+				},
+				"VacationTable": {
+					"viewType": "XML",
+					"viewName": "VacationTable"
 				},
 				"AddStudentForm": {
 					"viewType": "XML",
