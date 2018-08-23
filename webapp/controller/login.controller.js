@@ -58,7 +58,7 @@ sap.ui.define([
 			this.getOwnerComponent().getRouter().navTo("ManagerInternTable");
 		},
 		OnNavToVacation: function (){
-			this.getOwnerComponent().getRouter().navTo("ManagerInternTable");
+			this.getOwnerComponent().getRouter().navTo("VacationTable");
 		},
 		OnNavToAddStudent: function (){
 			this.getOwnerComponent().getRouter().navTo("AddStudentForm");
