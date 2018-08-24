@@ -13,6 +13,110 @@ sap.ui.define([
 
 	var PageController = Controller.extend("STARSchedule.STARSchedule.controller.login", {
 		
+		onInit: function(){
+			this.getView().setModel(this.getOwnerComponent().getModel("Managers"),"Managers");
+			var oData=this.getView().getModel("Managers").getData();
+			var currentTime=new Date();
+				var currentDay=currentTime.getDay();
+				var countvacation=0;
+				for(var i=0;i<oData[0].Intern.length;i++){
+				for(var j=0;j<oData[0].Intern[i].Vacations.length;j++){
+								var start= new Date(oData[0].Intern[i].Vacations[j].Start);
+								var compare= new Date("August 23, 9999");
+								var end= new Date(oData[0].Intern[i].Vacations[j].End);
+								if(start.getTime()!==compare.getTime() && (start<currentTime && currentTime<end)){
+									countvacation++;
+								}
+							}
+				}
+				this.getView().byId("vacation").setValue(countvacation);
+				switch(currentDay){
+					case 1:
+						
+						var countinoffice=0;
+						var countremote=0;
+						
+						for(var i=0;i<oData[0].Intern.length;i++){
+							for(var j=0;j<oData[0].Intern[i].Monday.length;j++){
+								if(oData[0].Intern[i].Monday[j].Type===true){
+									countinoffice++;
+								}
+								if(oData[0].Intern[i].Monday[j].Type===false){
+									countremote++;
+								}
+							}
+							
+						}
+						this.getView().byId("inoffice").setValue(countinoffice);
+						this.getView().byId("remote").setValue(countinoffice);
+						break;
+					case 2:
+						var countinoffice=0;
+						var countremote=0;
+						for(var i=0;i<oData[0].Intern.length;i++){
+							for(var j=0;j<oData[0].Intern[i].Tuesday.length;j++){
+								if(oData[0].Intern[i].Tuesday[j].Type===true){
+									countinoffice++;
+								}
+								if(oData[0].Intern[i].Tuesday[j].Type===false){
+									countremote++;
+								}
+							}
+						}
+						this.getView().byId("inoffice").setValue(countinoffice);
+						this.getView().byId("remote").setValue(countinoffice);
+						break;
+					case 3:
+						var countinoffice=0;
+						var countremote=0;
+						for(var i=0;i<oData[0].Intern.length;i++){
+							for(var j=0;j<oData[0].Intern[i].Wednesday.length;j++){
+								if(oData[0].Intern[i].Wednesday[j].Type===true){
+									countinoffice++;
+								}
+								if(oData[0].Intern[i].Wednesday[j].Type===false){
+									countremote++;
+								}
+							}
+						}
+						this.getView().byId("inoffice").setValue(countinoffice);
+						this.getView().byId("remote").setValue(countinoffice);
+						break;
+					case 4:
+						var countinoffice=0;
+						var countremote=0;
+						for(var i=0;i<oData[0].Intern.length;i++){
+							for(var j=0;j<oData[0].Intern[i].Thursday.length;j++){
+								if(oData[0].Intern[i].Thursday[j].Type===true){
+									countinoffice++;
+								}
+								if(oData[0].Intern[i].Thursday[j].Type===false){
+									countremote++;
+								}
+							}
+						}
+						this.getView().byId("inoffice").setValue(countinoffice);
+						this.getView().byId("remote").setValue(countinoffice);
+						break;
+					case 5:
+						var countinoffice=0;
+						var countremote=0;
+						for(var i=0;i<oData[0].Intern.length;i++){
+							for(var j=0;j<oData[0].Intern[i].Friday.length;j++){
+								if(oData[0].Intern[i].Friday[j].Type===true){
+									countinoffice++;
+								}
+								if(oData[0].Intern[i].Friday[j].Type===false){
+									countremote++;
+								}
+							}
+						}
+						this.getView().byId("inoffice").setValue(countinoffice);
+						this.getView().byId("remote").setValue(countinoffice);
+						break;
+				}
+		},
+		
 		
 		
 		handleEditPress : function (evt) {

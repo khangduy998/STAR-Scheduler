@@ -30,21 +30,24 @@
 					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="In Office"
 						press="OnNavToInOffice">
 						<TileContent>
-							<ImageContent src="sap-icon://building" />
+							<NumericContent icon="sap-icon://building" id="inoffice" value="12" valueColor="Neutral" />
+							<!--<ImageContent src="sap-icon://building" />-->
 						</TileContent>
 					</GenericTile>
 				
 					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Working remotely"
 						press="OnNavToWorkingRemotely">
 						<TileContent>
-							<ImageContent src="sap-icon://offsite-work" />
+							<NumericContent icon="sap-icon://offsite-work" id="remote" value="12" valueColor="Neutral" />
+							<!--<ImageContent src="sap-icon://offsite-work" />-->
 						</TileContent>
 					</GenericTile>
 				
 					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="On Vacation"
 						 press="OnNavToVacation">
 						<TileContent>
-							<ImageContent src="sap-icon://general-leave-request" />
+							<NumericContent icon="sap-icon://general-leave-request" id="vacation" value="12" valueColor="Neutral" />
+							<!--<ImageContent src="sap-icon://general-leave-request" />-->
 						</TileContent>
 					</GenericTile>
 				
