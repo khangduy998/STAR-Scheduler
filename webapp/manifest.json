@@ -132,6 +132,13 @@
 					"target": [
 						"internView"
 					]
+				},
+				{
+					"name": "EditInternSchedule",
+					"pattern": "EditInternSchedule",
+					"target": [
+						"EditInternSchedule"
+					]
 				}
 				
 			],
@@ -174,6 +181,10 @@
 				"internView": {
 					"viewType": "XML",
 					"viewName": "internView"
+				},
+				"EditInternSchedule": {
+					"viewType": "XML",
+					"viewName": "internSchedule"
 				}
 				
 				

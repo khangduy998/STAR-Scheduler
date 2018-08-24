@@ -110,6 +110,13 @@ sap.ui.define([
 		},
 		OnNavToInternList: function (){
 			this.getOwnerComponent().getRouter().navTo("InternList");
+		},
+		OnNavToEditSchedule: function(){
+			this.getOwnerComponent().getRouter().navTo("EditInternSchedule");
+		},
+		OnCheckIn: function(oEvent){
+			sap.m.MessageToast.show("Checked In");
+			oEvent.getSource().setState("Disabled");
 		}
 	});
 
