@@ -1,4 +1,4 @@
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" controllerName="STARSchedule.STARSchedule.controller.StudentSchedule" displayBlock="true">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" controllerName="STARSchedule.STARSchedule.controller.internSchedule" displayBlock="true">
 	<App id="idAppControl">
 		<pages>
 			<Page title="{intern>Name}" showNavButton="true" showFooter="true" navButtonPress="onNavBack">
@@ -170,7 +170,7 @@
 				<footer> 
 					<Toolbar>
 				<ToolbarSpacer/>
-				<Button text="Save" press="" />
+				<Button text="Save" press="onSave" />
 				<ToolbarSpacer/>
 			</Toolbar>
 				</footer>

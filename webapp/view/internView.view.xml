@@ -21,21 +21,22 @@
 			<!--Rating Indicator-->
 			<FlexBox class="sapUiContentPadding" id="flexforstar" alignItems="Center" justifyContent="Center">
 				<items>
-					<Label class="sapUiTinyMarginEnd" text="STAR Rating" labelFor="RI_default"/>
-					<RatingIndicator id="RI_default" maxValue="5" class="sapUiSmallMarginBottom" value="4" editable="false" tooltip="Rating Tooltip"/>
+					
+					<RatingIndicator id="RI_default" maxValue="1" class="sapUiSmallMarginBottom" value="1" editable="false" tooltip="STAR Count"/>
+					<Label class="sapUiTinyMarginBegin" text="1 STAR Count" labelFor="RI_default"/>
 				</items>
 			</FlexBox>
 			<!--Tiles functionality -->
 			<FlexBox id="flexonthis" alignItems="Center" justifyContent="Center">
 				<items>
-					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Edit Schedule" press="OnNavToInOffice">
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Edit Schedule" press="OnNavToEditSchedule">
 						<TileContent>
-							<ImageContent src="sap-icon://icon-due-date"/>
+							<ImageContent src="sap-icon://appointment-2"/>
 						</TileContent>
 					</GenericTile>
-					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Check In" press="OnNavToWorkingRemotely">
-						<TileContent>
-							<ImageContent src="sap-icon://icon-approved"/>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Check In" press="OnCheckIn">
+						<TileContent >
+							<ImageContent src="sap-icon://accept"/>
 						</TileContent>
 					</GenericTile>
 				</items>
