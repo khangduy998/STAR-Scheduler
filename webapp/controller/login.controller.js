@@ -2,14 +2,19 @@ sap.ui.define([
 		'jquery.sap.global',
 		'sap/ui/core/mvc/Controller',
 		'sap/ui/model/json/JSONModel',
-			'sap/m/Popover',
-			'sap/m/Button'
-	], function(jQuery, Controller, JSONModel, Popover, Button) {
+		'sap/m/Dialog',
+		'sap/m/Popover',
+		'sap/m/Button',
+		'sap/m/TextArea',
+		'sap/m/MessageToast',
+		'sap/m/Label'
+	], function(jQuery, Controller, JSONModel, Dialog, Popover, Button, TextArea, MessageToast, Label) {
 	"use strict";
 
 	var PageController = Controller.extend("STARSchedule.STARSchedule.controller.login", {
 		
-
+		
+		
 		handleEditPress : function (evt) {
 			var oTileContainer = this.byId("container");
 			var newValue = !oTileContainer.getEditable();
@@ -28,7 +33,9 @@ sap.ui.define([
 			var tile = evt.getParameter("tile");
 			evt.getSource().removeTile(tile);
 		},
+		pressDialog: null,
 		onUserNamePress: function (oEvent) {
+			
 			var	getrouter = this.getOwnerComponent().getRouter();
 			var oPopover = new Popover({
 				showHeader: false,
@@ -36,11 +43,45 @@ sap.ui.define([
 				content:[
 					new Button({
 						text: 'Feedback',
-						type: sap.m.ButtonType.Transparent
-					}),
-					new Button({
-						text: 'Help',
-						type: sap.m.ButtonType.Transparent
+						type: sap.m.ButtonType.Transparent,
+						press: function (){
+							var dialog = new Dialog({
+							title: 'Feedback',
+							type: 'Message',
+							content: [
+								new TextArea('submitDialogTextarea', {
+									liveChange: function(oEvent) {
+										var sText = oEvent.getParameter('value');
+										var parent = oEvent.getSource().getParent();
+			
+										parent.getBeginButton().setEnabled(sText.length > 0);
+									},
+									width: '100%',
+									placeholder: 'Add note (required)'
+								})
+							],
+							beginButton: new Button({
+								text: 'Submit',
+								enabled: false,
+								press: function () {
+									var sText = sap.ui.getCore().byId('submitDialogTextarea').getValue();
+									MessageToast.show('Feedback is: ' + sText);
+									dialog.close();
+								}
+							}),
+							endButton: new Button({
+								text: 'Cancel',
+								press: function () {
+									dialog.close();
+								}
+							}),
+							afterClose: function() {
+								dialog.destroy();
+							}
+						});
+			
+						dialog.open();
+						}
 					}),
 					new Button({
 						text: 'Logout',
